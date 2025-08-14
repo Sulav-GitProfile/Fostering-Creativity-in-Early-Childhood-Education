@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theories & Reflection - Creativity in Early Childhood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: rgb(234, 231, 208);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgb(3, 3, 3);
+            padding: 20px 0;
+            padding-left: 700px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            margin: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #8e1111;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #f5f6f9;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: rgb(3, 3, 3);
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: rgb(210, 90, 90);
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            margin: 60px 0;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 3px solid #E6E6FA;
+        }
+
+        .layout-left-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .layout-right-left {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .layout-right-left .content {
+            order: 2;
+        }
+
+        .layout-right-left .image {
+            order: 1;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            color: #4A90E2;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .image-placeholder {
+            height: 400px;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #FFB3D9;
+        }
+
+        footer {
+            background: #040404;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            background: rgba(251, 251, 250, 0.2);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid #040404;
+        }
+
+        .social-links a:hover {
+            background: #ffffff;
+            color: #ece6e6;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding-left: 0;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            .page-title {
+                font-size: 36px;
+            }
+
+            .layout-left-right,
+            .layout-right-left {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .layout-right-left .content,
+            .layout-right-left .image {
+                order: unset;
+            }
+
+            .content h2 {
+                font-size: 28px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+
+            .image-placeholder {
+                height: 250px;
+            }
+
+            .social-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="Curriculumpage.html">Curriculum</a></li>
+                        <li><a href="Activities.html">Activities</a></li>
+                        <li><a href="Theories&Relection.html">Theories & Reflection</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="page-title">
+            Theories & Reflection
+        </div>
+
+        <main>
+            <!-- Movement & Music Theories - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Movement & Music Theories</h2>
+                        <p>Vygotsky’s socio-cultural perspective views music and movement as cultural tools that mediate creative expression through social interaction, internalizing rhythms and gestures. Piaget’s theory emphasizes sensorimotor exploration, where children construct knowledge through bodily experiences. Gardner’s Multiple Intelligences identifies bodily-kinesthetic and musical intelligences as key creative outlets. Torrance’s creativity model highlights fluency, flexibility, and originality developed through improvisational dance and music-making, fostering a rich platform for creativity (Hallam, 2010).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                             <img src="guitar.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language & Literacy Theories - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Language & Literacy Theories</h2>
+                        <p>Vygotsky’s sociocultural theory emphasizes social interaction in language development, with collaborative storytelling fostering creativity. Bruner’s constructivist approach highlights narrative as a tool for sense-making. The Reggio Emilia approach views verbal and written communication as part of the “hundred languages of children,” encouraging imaginative play and identity formation through literacy activities (Trevarthen & Aitken, 2001).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="books.jpeg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Theories - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Science Theories</h2>
+                        <p>Dewey’s experiential learning theory supports hands-on scientific exploration, fostering creativity through experimentation. Vygotsky’s scaffolding concept highlights social interaction in inquiry-based learning, enhancing understanding and confidence. These frameworks promote curiosity and critical thinking, enabling children to develop problem-solving skills through active scientific discovery (Dewey, 1938; Kuhlthau, 2021).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="science.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering Theories - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Engineering Theories</h2>
+                        <p>Piaget’s constructivism supports hands-on experimentation in engineering, aligning with children’s natural discovery processes. Vygotsky’s scaffolding emphasizes adult guidance in problem-solving. Guilford’s divergent thinking model encourages multiple solutions to engineering challenges. Reggio Emilia views the environment as a “third teacher,” fostering creativity through material exploration (Guilford, 1967; Piaget, 1952).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="house.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Theories - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Technologies Theories</h2>
+                        <p>Papert’s constructionism supports learning through technology by encouraging active creation and experimentation. Vygotsky’s theory highlights collaboration in technological problem-solving. The TPACK framework integrates technology with pedagogy, enabling creative learning experiences. Digital literacy theories advocate for children as active creators, fostering innovation and critical thinking (Papert, 1993).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                             <img src="tech.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics & Numeracy Theories - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Mathematics & Numeracy Theories</h2>
+                        <p>Piaget’s cognitive development theory emphasizes hands-on exploration for building mathematical knowledge. Sternberg’s investment theory of creativity views children as investing in unconventional approaches to problem-solving. Reggio Emilia supports using manipulatives to explore mathematical concepts, fostering flexible and confident thinkers (Sternberg, 2018; Clements & Sarama, 2014).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                             <img src="abacus.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Humanities & Social Sciences Theories - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Humanities & Social Sciences Theories</h2>
+                        <p>Vygotsky’s social constructivism supports collaborative exploration of cultural and social topics. Gardner’s multiple intelligences encourage expression through linguistic and interpersonal modalities. Dewey’s experiential learning model promotes inquiry and reflection, fostering empathy and critical thinking through real-world connections (Vygotsky, 1978; Gardner, 1983).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                           <img src="culturalvalues.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrated Curriculum Theories - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Integrated Curriculum Theories</h2>
+                        <p>Dewey’s experiential learning supports interdisciplinary projects connecting multiple subjects. Gardner’s multiple intelligences facilitate engagement across diverse domains. Torrance’s creative thinking theory emphasizes originality and flexibility in integrated projects, fostering innovation and problem-solving (Dewey, 1938; Torrance, 1966).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="groupwork.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Critical Reflection - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Critical Reflection</h2>
+                        <p>The enacted activities, Cardboard Tube Towers (2–3 years) and Group Storytelling (3–5 years), demonstrated strong engagement. In Cardboard Tube Towers, children showed problem-solving and curiosity while experimenting with balance and stability. Group Storytelling fostered collaboration and imaginative narratives, enhancing verbal expression.</p>
+                        <p>Challenges included some children needing encouragement in tower-building and quieter children requiring support in storytelling. Improvements include small-group rotations for tower-building to ensure participation and visual prompts or extended sessions for storytelling to engage all children. These activities highlight the need for balanced structure and freedom to promote creativity and collaboration.</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                             <img src="integrated.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://facebook.com" title="Facebook" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" 
+                             alt="Facebook Logo" width="24" height="24">
+                    </a>
+                    <a href="https://instagram.com" title="Instagram" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" 
+                             alt="Instagram Logo" width="24" height="24">
+                    </a>
+                    <a href="https://twitter.com" title="Twitter" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" 
+                             alt="Twitter Logo" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Creativity in Early Childhood Education. All rights reserved.</p>
+                <p>Empowering young minds through innovative, developmentally appropriate creative learning experiences.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Creativity in Early Childhood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: rgb(234, 231, 208);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgb(3, 3, 3);
+            padding: 20px 0;
+            padding-left: 700px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            margin: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #8e1111;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #f5f6f9;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: rgb3, 3, 3);
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: rgb(210, 90, 90);
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            margin: 60px 0;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 3px solid #E6E6FA;
+        }
+
+        .layout-left-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .layout-right-left {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .layout-right-left .content {
+            order: 2;
+        }
+
+        .layout-right-left .image {
+            order: 1;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            color: #4A90E2;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .image-placeholder {
+            height: 400px;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #FFB3D9;
+        }
+
+        footer {
+            background: #040404;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            background: rgba(251, 251, 250, 0.2);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid #040404;
+        }
+
+        .social-links a:hover {
+            background: #ffffff;
+            color: #ece6e6;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding-left: 0;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            .page-title {
+                font-size: 36px;
+            }
+
+            .layout-left-right,
+            .layout-right-left {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .layout-right-left .content,
+            .layout-right-left .image {
+                order: unset;
+            }
+
+            .content h2 {
+                font-size: 28px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+
+            .image-placeholder {
+                height: 250px;
+            }
+
+            .social-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                         <li><a href="homepage.html">Home</a></li>
+                        <li><a href="Curriculumpage.html">Curriculum</a></li>
+                        <li><a href="Activities.html">Activities</a></li>
+                        <li><a href="Theories&Relection.html">Theories & Reflection</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="page-title">
+            Curriculum Areas
+        </div>
+
+        <main>
+            <!-- Movement & Music Section - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Movement & Music</h2>
+                        <p>Movement and music are vital for fostering creativity in early childhood, offering multisensory avenues for self-expression, emotional regulation, and imaginative exploration. Physical activities enhance gross motor skills, while rhythmic patterns improve coordination and memory.</p>
+                        <p>Music stimulates auditory and emotional centers, encouraging improvisation and problem-solving. Activities like dance and drumming foster neural connectivity, social bonding, and cultural awareness, laying the foundation for lifelong creative thinking (Hallam, 2010).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="childrendancing.jpeg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language & Literacy Section - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Language & Literacy</h2>
+                        <p>Language and literacy form the basis for communication and self-expression, supporting cognitive and emotional development. Creative activities like storytelling, puppet play, and digital tools like Book Creator encourage vocabulary growth and narrative skills.</p>
+                        <p>These experiences foster imagination and a love for reading and writing, empowering children to express ideas and engage with language creatively throughout their lives.</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                          <img src="childrenstroytelling.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Section - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Science</h2>
+                        <p>Science nurtures curiosity and critical thinking through hands-on experiments. Activities like water play and circuit-building help children connect concepts to real-world scenarios, fostering discovery and innovation.</p>
+                        <p>Creative scientific experiences encourage hypothesis formulation and problem-solving, building resilience and a deeper understanding of the world (Dewey, 1938).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                             <img src="experiment.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering Section - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Engineering</h2>
+                        <p>Engineering promotes imagination and problem-solving through design and construction. Using blocks, LEGO, and tools like Tinkercad, children explore structures and mechanisms, enhancing spatial skills and perseverance.</p>
+                        <p>These activities encourage teamwork and curiosity, laying the groundwork for STEM thinking and innovative solutions to real-world problems (Cameron et al., 2018).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="childrenbuildingilding.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Section - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Technologies</h2>
+                        <p>Technologies foster digital literacy and innovation through tools like Bee-Bots and drawing apps. Integrating digital and non-digital resources supports collaboration and prepares children for a digital world.</p>
+                        <p>Creative technology use encourages experimentation and problem-solving, enhancing children's agency across developmental domains.</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="digital.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics & Numeracy Section - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Mathematics & Numeracy</h2>
+                        <p>Mathematics encourages logical thinking and pattern exploration through manipulatives and apps like Math Seeds. Creative activities foster flexible thinking and confidence in problem-solving.</p>
+                        <p>Open-ended inquiries with counting beads and tangrams help children view mathematics as a dynamic, engaging tool (Clements & Sarama, 2014).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="math.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Humanities & Social Sciences Section - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Humanities & Social Sciences</h2>
+                        <p>Humanities and social sciences build empathy and global awareness through role-play and tools like Google Earth. Children explore cultures and history, fostering critical thinking and collaboration.</p>
+                        <p>Creative activities like storytelling and cultural festivals enhance understanding of diverse perspectives (Vygotsky, 1978).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="cultural.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrated Curriculum Section - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Integrated Curriculum</h2>
+                        <p>STEM, STEAM, STREAM, and STEMIE combine disciplines for holistic learning. Projects like bridge-building integrate science, art, and engineering, promoting creativity and problem-solving.</p>
+                        <p>Interdisciplinary approaches foster adaptability and innovation, preparing children for complex challenges (Beers, 2011).</p>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="STEM.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://facebook.com" title="Facebook" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" 
+                             alt="Facebook Logo" width="24" height="24">
+                    </a>
+                    <a href="https://instagram.com" title="Instagram" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" 
+                             alt="Instagram Logo" width="24" height="24">
+                    </a>
+                    <a href="https://twitter.com" title="Twitter" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" 
+                             alt="Twitter Logo" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Creativity in Early Childhood Education. All rights reserved.</p>
+                <p>Empowering young minds through innovative, developmentally appropriate creative learning experiences.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

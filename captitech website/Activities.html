@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Creativity in Early Childhood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: rgb(234, 231, 208);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgb(3, 3, 3);
+            padding: 20px 0;
+            padding-left: 700px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            margin: 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #8e1111;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #f5f6f9;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: rgb(3, 3, 3);
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: rgb(210, 90, 90);
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            margin: 60px 0;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border: 3px solid #E6E6FA;
+        }
+
+        .layout-left-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .layout-right-left {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .layout-right-left .content {
+            order: 2;
+        }
+
+        .layout-right-left .image {
+            order: 1;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            color: #4A90E2;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .image-placeholder {
+            height: 400px;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #FFB3D9;
+        }
+
+        footer {
+            background: #040404;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            font-size: 24px;
+            text-decoration: none;
+            padding: 10px;
+            background: rgba(251, 251, 250, 0.2);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 2px solid #040404;
+        }
+
+        .social-links a:hover {
+            background: #ffffff;
+            color: #ece6e6;
+        }
+
+        .copyright {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding-left: 0;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            .page-title {
+                font-size: 36px;
+            }
+
+            .layout-left-right,
+            .layout-right-left {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .layout-right-left .content,
+            .layout-right-left .image {
+                order: unset;
+            }
+
+            .content h2 {
+                font-size: 28px;
+            }
+
+            .content ul {
+                font-size: 16px;
+            }
+
+            .image-placeholder {
+                height: 250px;
+            }
+
+            .social-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="Curriculumpage.html">Curriculum</a></li>
+                        <li><a href="Activities.html">Activities</a></li>
+                        <li><a href="Theories&Relection.html">Theories & Reflection</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="page-title">
+            Learning Activities
+        </div>
+
+        <main>
+            <!-- Movement & Music Activities - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Movement & Music Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Tummy Time Dance - Infants track scarves swayed to gentle music, encouraging reaching and kicking (EYLF Outcome 3).</li>
+                            <li><strong>0–2 Years:</strong> Shake and Sing - Using baby-safe shakers for call-and-response songs, fostering auditory discrimination.</li>
+                            <li><strong>2–3 Years:</strong> Animal Moves Parade - Children imitate animals to music, enhancing coordination and symbolic play.</li>
+                            <li><strong>2–3 Years:</strong> Drum Circle - Group drumming to explore tempo and dynamics collaboratively.</li>
+                            <li><strong>3–5 Years:</strong> Story Dance - Children interpret picture books through improvised movement sequences.</li>
+                            <li><strong>3–5 Years:</strong> Rhythm Building Blocks - Creating sound patterns with percussion instruments, fostering sequencing skills.</li>
+                            <li><strong>6–8 Years:</strong> Cultural Dance Workshop - Exploring traditional dances, integrating music, history, and costume.</li>
+                            <li><strong>6–8 Years:</strong> Music Video Project - Children choreograph and record dances using tablets, blending performance and digital creativity.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="instruments.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language & Literacy Activities - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Language & Literacy Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Story Basket Exploration - Infants interact with textured books and puppets during read-alouds (Trevarthen & Aitken, 2001).</li>
+                            <li><strong>0–2 Years:</strong> Nursery Rhyme Actions - Singing rhymes with gestures to build sound recognition.</li>
+                            <li><strong>2–3 Years:</strong> Puppet Storytelling - Children co-create stories with puppets, enhancing vocabulary and sequencing.</li>
+                            <li><strong>2–3 Years:</strong> Sound Hunt - Listening walks to identify and name environmental sounds.</li>
+                            <li><strong>3–5 Years:</strong> Story Building Cards - Collaborative storytelling with picture cards to boost narrative skills.</li>
+                            <li><strong>3–5 Years:</strong> Role-play Post Office - Writing and delivering “letters” in pretend play to integrate literacy.</li>
+                            <li><strong>6–8 Years:</strong> Digital Story Creation - Using Book Creator to write, illustrate, and narrate stories.</li>
+                            <li><strong>6–8 Years:</strong> Poetry Café - Children compose and perform original poems, building confidence.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="stroytelling.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Activities - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Science Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Water Play - Exploring cause and effect with cups and funnels.</li>
+                            <li><strong>0–2 Years:</strong> Sensory Exploration - Investigating leaves, stones, and flowers.</li>
+                            <li><strong>2–3 Years:</strong> Mixing Colors - Observing changes with paint and water.</li>
+                            <li><strong>2–3 Years:</strong> Planting Seeds - Watering seeds daily to observe growth.</li>
+                            <li><strong>3–5 Years:</strong> Sink/Float Investigation - Testing objects to explore buoyancy.</li>
+                            <li><strong>3–5 Years:</strong> Insect Observation - Using magnifiers to study insects in the garden.</li>
+                            <li><strong>6–8 Years:</strong> Simple Circuits - Building circuits with batteries and bulbs.</li>
+                            <li><strong>6–8 Years:</strong> Dissolving Experiments - Testing substances in water to observe changes.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="experimentofchildren.webp" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering Activities - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Engineering Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Stacking Soft Blocks - Exploring balance and cause-effect (Cameron et al., 2018).</li>
+                            <li><strong>0–2 Years:</strong> Simple Object Sorting - Sorting cups or shapes to build spatial reasoning.</li>
+                            <li><strong>2–3 Years:</strong> Cardboard Tube Towers - Building towers to explore stability and height.</li>
+                            <li><strong>2–3 Years:</strong> Rolling Ball Ramps - Experimenting with ramps and balls to observe motion.</li>
+                            <li><strong>3–5 Years:</strong> Bridge Building Challenge - Designing bridges with LEGO or blocks to hold weight.</li>
+                            <li><strong>3–5 Years:</strong> Pulley Play - Lifting objects with basic pulleys to explore mechanics.</li>
+                            <li><strong>6–8 Years:</strong> Egg Drop Engineering - Designing protective structures for eggs.</li>
+                            <li><strong>6–8 Years:</strong> Simple Circuit Construction - Creating circuits to understand energy flow.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="legos.webp" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Activities - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Technologies Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Touch Screen Exploration - Interacting with apps to learn cause and effect.</li>
+                            <li><strong>0–2 Years:</strong> Digital Photo Exploration - Using cameras to capture and discuss images.</li>
+                            <li><strong>2–3 Years:</strong> Simple Coding with Bee-Bots - Programming directional commands.</li>
+                            <li><strong>2–3 Years:</strong> Digital Storytelling - Exploring interactive stories on tablets.</li>
+                            <li><strong>3–5 Years:</strong> Creating Digital Art - Using drawing apps to create and share artwork.</li>
+                            <li><strong>3–5 Years:</strong> Stop-Motion Animation - Producing simple animations with tablets.</li>
+                            <li><strong>6–8 Years:</strong> Multimedia Storytelling - Combining images, audio, and text for digital stories.</li>
+                            <li><strong>6–8 Years:</strong> Robotics Challenges - Programming robots to solve tasks.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                             <img src="digitaltools.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics & Numeracy Activities - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Mathematics & Numeracy Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Sorting Blocks - Sorting by shape and color.</li>
+                            <li><strong>0–2 Years:</strong> Counting Songs - Using finger play, e.g., “Five Little Ducks.”</li>
+                            <li><strong>2–3 Years:</strong> Matching Numerals - Matching numeral cards to object sets.</li>
+                            <li><strong>2–3 Years:</strong> Tower Heights - Comparing tower heights with simple language.</li>
+                            <li><strong>3–5 Years:</strong> Outdoor Shape Hunt - Identifying shapes with clipboards.</li>
+                            <li><strong>3–5 Years:</strong> Pattern-Making - Extending sequences with beads.</li>
+                            <li><strong>6–8 Years:</strong> Board Game Design - Creating games with addition/subtraction.</li>
+                            <li><strong>6–8 Years:</strong> Cooking Fractions - Measuring ingredients to learn fractions.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="mathe.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Humanities & Social Sciences Activities - Left Content, Right Image -->
+            <div class="content-section">
+                <div class="layout-left-right">
+                    <div class="content">
+                        <h2>Humanities & Social Sciences Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Family Photo Exploration - Discussing family relationships with photos.</li>
+                            <li><strong>0–2 Years:</strong> Cultural Song Time - Singing songs from different cultures.</li>
+                            <li><strong>2–3 Years:</strong> Community Helpers Role-Play - Acting out roles like firefighters or doctors.</li>
+                            <li><strong>2–3 Years:</strong> Story Sack Exploration - Using props to discuss social interactions.</li>
+                            <li><strong>3–5 Years:</strong> Map Your Playground - Creating simple maps of classrooms or playgrounds.</li>
+                            <li><strong>3–5 Years:</strong> Cultural Festival Day - Exploring customs, dress, and food.</li>
+                            <li><strong>6–8 Years:</strong> Historical Diary Project - Writing diaries as historical figures.</li>
+                            <li><strong>6–8 Years:</strong> Social Problem-Solving - Designing solutions for community issues like recycling.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="cultural.jpg" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrated Curriculum Activities - Right Content, Left Image -->
+            <div class="content-section">
+                <div class="layout-right-left">
+                    <div class="content">
+                        <h2>Integrated Curriculum Activities</h2>
+                        <ul>
+                            <li><strong>0–2 Years:</strong> Sensory Engineering Boxes - Exploring water, sand, and soft materials.</li>
+                            <li><strong>0–2 Years:</strong> Sound Exploration - Creating sounds with instruments and objects.</li>
+                            <li><strong>2–3 Years:</strong> Building Simple Structures - Stacking blocks to explore balance.</li>
+                            <li><strong>2–3 Years:</strong> Colour Mixing Lab - Mixing paints to discover color changes.</li>
+                            <li><strong>3–5 Years:</strong> Design a Playground - Building mini playgrounds with blocks.</li>
+                            <li><strong>3–5 Years:</strong> Simple Coding Games - Using Bee-Bot for sequencing challenges.</li>
+                            <li><strong>6–8 Years:</strong> Bridge Engineering & Art - Designing and decorating bridges.</li>
+                            <li><strong>6–8 Years:</strong> Environmental STEAM Project - Addressing issues like waste management.</li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <div class="image-placeholder">
+                            <img src="projects.png" alt="childrens" width="500" height="400">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://facebook.com" title="Facebook" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" 
+                             alt="Facebook Logo" width="24" height="24">
+                    </a>
+                    <a href="https://instagram.com" title="Instagram" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" 
+                             alt="Instagram Logo" width="24" height="24">
+                    </a>
+                    <a href="https://twitter.com" title="Twitter" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" 
+                             alt="Twitter Logo" width="24" height="24">
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Creativity in Early Childhood Education. All rights reserved.</p>
+                <p>Empowering young minds through innovative, developmentally appropriate creative learning experiences.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
